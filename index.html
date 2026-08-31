@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض خاص: اشتراك Gemini Pro الرسمي 18 شهر | الذكاء الاصطناعي الخارق</title>
+    <meta name="description" content="عرض خيالي للمحترفين وصناع المحتوى: اشتراك Google Gemini Pro الرسمي لمدة 18 شهر كاملة مع 5 حسابات إضافية، 5TB مساحة تخزين وهدايا حصرية بسعر 1000 دج فقط!">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900;1000&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Lighting & Grid Effects -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span class="badge-pulse"><i class="fa-solid fa-fire"></i> عرض حصري محدود</span>
+            <p>خصم 98% لفترة محدودة جداً! باقي فقط <strong id="seats-left">7 حسابات</strong> بهذا السعر!</p>
+            <a href="#order-section" class="top-bar-btn">احجز الآن <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-sparkles"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-title">Gemini <span class="gradient-text">Pro 18M</span></span>
+                    <span class="brand-sub">Official AI Supercharge</span>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#features">المميزات</a>
+                <a href="#bonuses">الهدايا الحصرية</a>
+                <a href="#compare">مقارنة التوفير</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+            </nav>
+
+            <a href="#order-section" class="btn btn-primary nav-cta">
+                <i class="fa-solid fa-bolt"></i> اطلب الآن (1000 دج)
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-crown text-gold"></i>
+                    <span>العرض الأقوى في الجزائر لـ 2026</span>
+                </div>
+
+                <h1 class="hero-title">
+                    عـرض خـيـالـي لـلـمـحـتـرِفـيـن وصُـنّـاع الـمُـحـتـوى!<br>
+                    <span class="gradient-title">18 شـهـر مـن الـذّكـاء الاصـطـنـاعـي الـخـارق 🚀</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    راك حاب تقدّم لڤدام في خدمتك وتضاعف إنتاجيتك 10x؟ حاب تريح راسك نهائياً من الحسابات المهكرة والاشتراكات اللي تقطع في نص الطريق؟ 
+                    <strong>رانا جبنالك الحل الرسمي والنهائي!</strong>
+                </p>
+
+                <!-- Pricing Highlight Card -->
+                <div class="price-hero-box">
+                    <div class="price-badge-ribbon">خصم استثنائي</div>
+                    <div class="price-main">
+                        <span class="old-price">36,000 دج</span>
+                        <div class="current-price-wrap">
+                            <span class="curr-amount">1,000</span>
+                            <span class="curr-unit">دج فقط</span>
+                        </div>
+                        <span class="duration-pill"><i class="fa-regular fa-calendar-check"></i> لمدة 18 شهر كاملة</span>
+                    </div>
+                    <p class="price-note"><i class="fa-solid fa-shield-halved text-success"></i> حساب رسمي 100% مضمون طيلة المدة مع كامل التحديثات</p>
+                </div>
+
+                <!-- Live Countdown -->
+                <div class="countdown-wrapper">
+                    <div class="countdown-label">
+                        <i class="fa-regular fa-clock"></i> ينتهي العرض وتعود الأسعار لأصلها بعد:
+                    </div>
+                    <div class="countdown-boxes" id="countdown">
+                        <div class="count-box">
+                            <span class="count-num" id="cd-hours">08</span>
+                            <span class="count-txt">ساعات</span>
+                        </div>
+                        <div class="count-box">
+                            <span class="count-num" id="cd-minutes">42</span>
+                            <span class="count-txt">دقائق</span>
+                        </div>
+                        <div class="count-box">
+                            <span class="count-num" id="cd-seconds">19</span>
+                            <span class="count-txt">ثواني</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#order-section" class="btn btn-glow btn-hero">
+                        <span>احجز حسابك الرسمي الآن ⚡</span>
+                        <small>تسليم فوري ومتابعة خطوة بخطوة</small>
+                    </a>
+                    <a href="https://wa.me/213555000000?text=%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%AD%D8%A7%D8%A8%20%D9%86%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20Gemini%20Pro%2018%20%D8%B4%D9%87%D8%B1" target="_blank" class="btn btn-secondary-glow">
+                        <i class="fa-brands fa-whatsapp text-whatsapp"></i> تواصل معنا عبر واتساب
+                    </a>
+                </div>
+
+                <!-- Trust Points -->
+                <div class="hero-trust">
+                    <div class="trust-item"><i class="fa-solid fa-circle-check"></i> دفع آمن (بريدي موب / CCP)</div>
+                    <div class="trust-item"><i class="fa-solid fa-headset"></i> دعم فني ومرافقة كاملة</div>
+                    <div class="trust-item"><i class="fa-solid fa-lock"></i> حساب شخصي وليس مهكر</div>
+                </div>
+            </div>
+
+            <!-- Hero Visual / 3D Card Showcase -->
+            <div class="hero-visual">
+                <div class="visual-card-wrap">
+                    <div class="glow-orb"></div>
+                    
+                    <div class="main-ai-card glass-panel">
+                        <div class="card-header-ai">
+                            <div class="ai-chip">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i> GOOGLE GEMINI PRO
+                            </div>
+                            <div class="ai-status">
+                                <span class="status-dot"></span> نشط (18 شهر)
+                            </div>
+                        </div>
+
+                        <div class="ai-model-list">
+                            <div class="model-item">
+                                <div class="model-icon m-purple"><i class="fa-solid fa-brain"></i></div>
+                                <div class="model-info">
+                                    <h4>Gemini 1.5 Pro & Ultra</h4>
+                                    <p>تحليل المستندات الضخمة + 2M Token سياق</p>
+                                </div>
+                                <span class="badge-mini">PRO</span>
+                            </div>
+
+                            <div class="model-item highlight-item">
+                                <div class="model-icon m-pink"><i class="fa-solid fa-film"></i></div>
+                                <div class="model-info">
+                                    <h4>Veo 3 & Imagen 3 🎬</h4>
+                                    <p>توليد فيديو وصور سينمائية بجودة 4K فوتوريالستيك</p>
+                                </div>
+                                <span class="badge-mini gold-bg">حصري</span>
+                            </div>
+
+                            <div class="model-item">
+                                <div class="model-icon m-blue"><i class="fa-solid fa-microphone-lines"></i></div>
+                                <div class="model-info">
+                                    <h4>NotebookLM Studio 🎙️</h4>
+                                    <p>تحويل النصوص والمراجع إلى بودكاست وصوت واقعي</p>
+                                </div>
+                                <span class="badge-mini">AUDIO</span>
+                            </div>
+
+                            <div class="model-item">
+                                <div class="model-icon m-green"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                                <div class="model-info">
+                                    <h4>مساحة تخزين 5TB سحابية ☁️</h4>
+                                    <p>احفظ ملفاتك وفيديوهاتك بأمان وضمان طيلة المدة</p>
+                                </div>
+                                <span class="badge-mini green-bg">5 TB</span>
+                            </div>
+                        </div>
+
+                        <!-- 6 Accounts Multiplier Feature -->
+                        <div class="card-footer-box">
+                            <div class="share-icon"><i class="fa-solid fa-users"></i></div>
+                            <div>
+                                <strong>ميزة العائلة / الفريق (1 + 5):</strong>
+                                <p>تقدر تضيف 5 إيميلات لأصحابك أو عائلتك = 6 حسابات بنفس الـ 1000 دج!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badges -->
+                    <div class="floating-tag tag-1 glass-card">
+                        <i class="fa-solid fa-gift text-gold"></i>
+                        <span>+1000 كريديت Flow شهرياً</span>
+                    </div>
+
+                    <div class="floating-tag tag-2 glass-card">
+                        <i class="fa-solid fa-code-merge text-cyan"></i>
+                        <span>+ اشتراك Antigravity مجاناً</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section id="features" class="section-padding features-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="sub-heading"><i class="fa-solid fa-stars"></i> إمكانيات خارقة بين يديك</span>
+                <h2>واش راح تستفاد مع هذا الحساب الفخم؟</h2>
+                <p>كل ماتحتاجه للعمل، الدراسة، وصناعة المحتوى الاحترافي في اشتراك واحد متكامل</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card glass-panel">
+                    <div class="feature-badge">1️⃣ حساب رسمي</div>
+                    <div class="feature-icon-box bg-grad-1">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3>حساب رسمي 100% ومشترك شخصي</h3>
+                    <p>ماشي مهكر وما يتبلوكاش! حساب مضمون يخدم بإيميلك الرسمي، وتقدر تضيف معاه <strong>5 حسابات وحدخرين</strong> يعني يوليو عندك <strong>6 حسابات بنفس الاشتراك! 👥</strong></p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> يشتغل على الهاتف، الكمبيوتر والتابلت</li>
+                        <li><i class="fa-solid fa-check"></i> خصوصية تامة لكل حساب منفصل</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card glass-panel highlight-feature">
+                    <div class="popular-ribbon">الأكثر طلباً 🔥</div>
+                    <div class="feature-badge">2️⃣ استوديو إبداعي</div>
+                    <div class="feature-icon-box bg-grad-2">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>عالم إبداعي بلا حدود (صور وفيديو)</h3>
+                    <p>استخدام أحدث موديلات توليد الصور والفيديو السينمائي بضغطة زر واحدة عبر عمالقة جوجل: <strong>(Imagen 3 و Veo 3 و Omni Flash)</strong> 🎬📸.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> توليد فيديوهات سينمائية واقعية للحملات الإعلانية</li>
+                        <li><i class="fa-solid fa-check"></i> تصميم صور وتصاميم سوشيال ميديا خارقة الدقة</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card glass-panel">
+                    <div class="feature-badge">3️⃣ استوديو صوتي</div>
+                    <div class="feature-icon-box bg-grad-3">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <h3>تحويل النصوص إلى صوت احترافي</h3>
+                    <p>عبر أداة <strong>NotebookLM</strong> العالمية، حول أي نص، ملف PDF أو كتاب إلى بودكاست ومحادثات صوتية واقعية بأي لغة أو لهجة تطلبها 🎙️.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> تلخيص الكتب والمحاضرات بصوت تفاعلي ممتع</li>
+                        <li><i class="fa-solid fa-check"></i> توليد فويس أوفر احترافي للمحتوى بدون ميكروفون</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card glass-panel">
+                    <div class="feature-badge">4️⃣ مساحة سحابية</div>
+                    <div class="feature-icon-box bg-grad-4">
+                        <i class="fa-solid fa-hard-drive"></i>
+                    </div>
+                    <h3>مساحة تخزين عملاقة 5 تيرابايت (5TB)</h3>
+                    <p>خزّن كل ملفاتك، فيديوهاتك 4K، تصاميمك ونسخك الاحتياطية في أمان وضمان تام طيلة مدة الاشتراك الـ 18 شهراً ☁️.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> أمان وحماية عالية ضد الضياع</li>
+                        <li><i class="fa-solid fa-check"></i> مزامنة تلقائية وفورية بين كل أجهزتك</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses / Gifts Section -->
+    <section id="bonuses" class="section-padding bonuses-section">
+        <div class="container">
+            <div class="bonus-box glass-panel-glow">
+                <div class="bonus-header text-center">
+                    <span class="bonus-tag"><i class="fa-solid fa-gift"></i> هدايا مجانية بقيمة 15,000 دج</span>
+                    <h2>🎁 الهدايا والـ Bonus المرفقة مع الاشتراك:</h2>
+                    <p>ما تجيش غير مع حساب Gemini Pro برك! راح تتحصل فوراً على هدايا حصرية تكميلية:</p>
+                </div>
+
+                <div class="bonus-grid">
+                    <div class="bonus-card">
+                        <div class="b-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                        <div class="b-details">
+                            <h3>حساب Flow المدفوع</h3>
+                            <p>مع <strong>1000 كريديت شهرياً</strong> لتنفيذ وتوليد المهام والتدفقات البرمجية والذكية بمرونة فائقة.</p>
+                        </div>
+                        <span class="b-badge">مجاناً 100%</span>
+                    </div>
+
+                    <div class="bonus-card">
+                        <div class="b-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <div class="b-details">
+                            <h3>حساب Antigravity المتميز</h3>
+                            <p>أداة تطوير وتوليد برمجيات وحلول متقدمة لصناع المحتوى والمطورين لرفع الإنتاجية إلى أقصى حد.</p>
+                        </div>
+                        <span class="b-badge">هدية مجانية</span>
+                    </div>
+
+                    <div class="bonus-card">
+                        <div class="b-icon"><i class="fa-solid fa-headset"></i></div>
+                        <div class="b-details">
+                            <h3>دعم فني ومرافقة خطوة بخطوة 🛠️</h3>
+                            <p>فريق الدعم تاعنا متواجد معاك دايماً بالفيديو والشرح حتى تعرف تمشي كل ميزة وتستغل الاشتراك 100%.</p>
+                        </div>
+                        <span class="b-badge">دعم VIP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who is this for? (Audience) -->
+    <section class="section-padding audience-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="sub-heading">لمن هذا العرض؟</span>
+                <h2>مناسب لكل من يريد النجاح والتميز</h2>
+            </div>
+
+            <div class="audience-grid">
+                <div class="aud-card glass-panel">
+                    <div class="aud-icon"><i class="fa-solid fa-video"></i></div>
+                    <h4>صناع المحتوى واليوتيوبرز</h4>
+                    <p>لتوليد الأفكار، سكربتات الفيديوهات، الصور المصغرة والفيديوهات التوليدية الاحترافية بسرعة خيالية.</p>
+                </div>
+
+                <div class="aud-card glass-panel">
+                    <div class="aud-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h4>المصممون والمسوقون</h4>
+                    <p>صناعة حملات إعلانية، تعديل الصور والرسومات وإنشاء محتوى سوشيال ميديا جذاب بدون تكاليف إضافية.</p>
+                </div>
+
+                <div class="aud-card glass-panel">
+                    <div class="aud-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h4>الطلبة والباحثون</h4>
+                    <p>تحليل آلاف صفحات المراجع، تلخيص الأبحاث إلى صوت مع NotebookLM، وإنجاز المذكرات بأعلى دقة.</p>
+                </div>
+
+                <div class="aud-card glass-panel">
+                    <div class="aud-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h4>أصحاب الأعمال والفريلانسرز</h4>
+                    <p>كتابة الإيميلات، خطط العمل، الترجمة الاحترافية، وإدارة مشاريع متعددة مع فريقك (6 حسابات).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table (Real Value vs Our Price) -->
+    <section id="compare" class="section-padding compare-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="sub-heading">احسب الفرق ووفر دراهمك</span>
+                <h2>مقارنة بسيطة تبيّن لك قوة العرض</h2>
+            </div>
+
+            <div class="table-responsive glass-panel">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>الميزة / الخدمة</th>
+                            <th>الاشتراك الرسمي العادي</th>
+                            <th>الحسابات المهكرة المجهولة</th>
+                            <th class="highlight-col">عرضنا الخاص اليوم 🔥</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>السعر الإجمالي</strong></td>
+                            <td>~36,000 دج ($240+)</td>
+                            <td>1,500 دج كل شهرين (متجدد)</td>
+                            <td class="highlight-col"><strong>1,000 دج فقط (مرة واحدة لـ 18 شهر)</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>المدة الزمنية</strong></td>
+                            <td>شهرية / سنوية</td>
+                            <td>ينقطع بعد أسبوع أو شهر</td>
+                            <td class="highlight-col"><span class="badge-tag green">18 شهر كاملة ومستمرة</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>أمان واستقرار الحساب</strong></td>
+                            <td>رسمي</td>
+                            <td>معرض للغلق والبلوك في أي لحظة</td>
+                            <td class="highlight-col"><span class="badge-tag green">رسمي 100% بدون انقطاع</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>مشاركة الحسابات</strong></td>
+                            <td>حساب فردي فقط</td>
+                            <td>حساب مشترك مع غرباء</td>
+                            <td class="highlight-col"><span class="badge-tag green">لك + 5 من اختيارك (6 حسابات)</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>مساحة التخزين السحابي</strong></td>
+                            <td>حسب الباقة الإضافية</td>
+                            <td>0 جيجابايت</td>
+                            <td class="highlight-col"><span class="badge-tag gold">5 تيرابايت (5000 GB) كاملة</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>موديلات Veo 3 & Imagen 3</strong></td>
+                            <td>تتطلب اشتراكات عليا</td>
+                            <td>غير متوفرة</td>
+                            <td class="highlight-col"><span class="badge-tag green">مدمجة ومفعلة فورا</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>الدعم والمرافقة</strong></td>
+                            <td>إنجليزي عبر التذاكر</td>
+                            <td>بدون أي دعم</td>
+                            <td class="highlight-col"><span class="badge-tag green">دعم جزائري مباشر ومخصص</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Social Proof -->
+    <section class="section-padding reviews-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="sub-heading">تجارب المشتركين</span>
+                <h2>واش قالو زبائننا اللي استغلوا العرض؟</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card glass-panel">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"يعطيكم الصحة خدمة نقية وسريعة جداً. في 10 دقائق تفعل الحساب، وزدت ضفت إيميل خويا وزميلي في الخدمة ورانا نخدمو بيه كامل بـ 1000 دج برك. صفقة العام بدون منازع!"</p>
+                    <div class="reviewer-info">
+                        <div class="rev-avatar">ك.م</div>
+                        <div>
+                            <h5>كريم م.</h5>
+                            <span>صانع محتوى وفيديو - الجزائر العاصمة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card glass-panel">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"أداة NotebookLM والـ 5TB تخزين سحابي عاونوني بزاف في مذكرتي. حولت كل الـ PDFs لملفات صوتية نسمعهم في الطريق. وVeo 3 لتوليد الفيديوهات خرافي!"</p>
+                    <div class="reviewer-info">
+                        <div class="rev-avatar">س.ب</div>
+                        <div>
+                            <h5>سارة ب.</h5>
+                            <span>طالبة ماستر ومصممة - وهران</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card glass-panel">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"كنت خايف يكون مهكر ويتبلوكا، بصح لقيتو حساب رسمي ومربوط مباشرة. فريق الدعم ساعدني خطوة بخطوة حتى شغلت Antigravity وFlow. بارك الله فيكم."</p>
+                    <div class="reviewer-info">
+                        <div class="rev-avatar">ي.ع</div>
+                        <div>
+                            <h5>ياسين ع.</h5>
+                            <span>مبرمج ومسوق رقمي - قسنطينة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding faq-section">
+        <div class="container faq-container">
+            <div class="section-title text-center">
+                <span class="sub-heading">كل الأسئلة في بالك</span>
+                <h2>الأسئلة الشائعة حول العرض</h2>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item glass-panel active">
+                    <div class="accordion-title">
+                        <span>هل الحساب رسمي حقاً ولا يتقفل مع الوقت؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>نعم، الحساب رسمي ومفعل 100% بطرق نظامية وقانونية وليس كراك أو ثغرة مؤقتة. الحساب يشتغل معك بكل أريحية لمدة 18 شهر كاملة مع ضمان كامل واستبدال فوري إن حدث أي إشكال.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item glass-panel">
+                    <div class="accordion-title">
+                        <span>كيفاش نقدر نضيف 5 حسابات وحدخرين؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>الاشتراك يتضمن ميزة إضافة 5 إيميلات من اختيارك (عائلتك، أصدقائك، أو فريق عملك). كل شخص راح يوصلوا رابط تفعيل في إيميلو الخاص ويستمتع بكامل مزايا Gemini Pro و5TB مساحة منفصلة تماماً عن الآخرين!</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item glass-panel">
+                    <div class="accordion-title">
+                        <span>ماهي طرق الدفع المتوفرة في الجزائر؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>نوفر أسهل وأأمن طرق الدفع: <strong>BaridiMob (بريدي موب)</strong>، تحويل <strong>CCP (بريد الجزائر)</strong>، أو الدفع عبر فليكسي/البطاقات. بعد ملء الاستمارة ستظهر لك معلومات الحساب فوراً لتسريع العملية.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item glass-panel">
+                    <div class="accordion-title">
+                        <span>شحال الوقت باش يوصلني الحساب بعد الدفع؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>التسليم فوري وشبه لحظي! بمجرد إرسال وصل التحويل عبر واتساب أو ميسنجر، سيقوم فريق الدعم بتفعيل حسابك وإرسال الدليل التوضيحي في غضون 5 إلى 15 دقيقة فقط.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item glass-panel">
+                    <div class="accordion-title">
+                        <span>واش ندير إذا ماعرفتش نستعمل الأدوات والميزات؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>ما تخافش كامل! يجي مع الاشتراك مرافقة ودعم فني مخصص، نبعثولك شروحات وفيديوهات مبسطة باللهجة الجزائرية لكيفية استخدام توليد الفيديو Veo 3، أداة الصوت NotebookLM، والحسابات الإضافية خطوة بخطوة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order & Booking Section -->
+    <section id="order-section" class="section-padding order-section">
+        <div class="container">
+            <div class="order-wrapper glass-panel-glow">
+                <div class="order-header text-center">
+                    <div class="urgency-badge"><i class="fa-solid fa-bolt"></i> خطوة واحدة تفصلك عن أقوى ذكاء اصطناعي</div>
+                    <h2>احجز حسابك الآن واستفد من سعر الـ 1000 دج</h2>
+                    <p>العرض محدود بالكمية المتوفرة. املأ البيانات بالأسفل وسيتم تحويلك فوراً لحجز الحساب:</p>
+                </div>
+
+                <div class="order-grid">
+                    <!-- Order Form -->
+                    <form id="orderForm" class="order-form">
+                        <div class="form-group">
+                            <label for="fullName"><i class="fa-solid fa-user"></i> الاسم الكامل:</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="مثال: أمين بن سالم" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phoneNumber"><i class="fa-solid fa-phone"></i> رقم الهاتف / واتساب:</label>
+                            <input type="tel" id="phoneNumber" class="form-control" placeholder="مثال: 0550123456" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userEmail"><i class="fa-solid fa-envelope"></i> الإيميل المراد تفعيل الاشتراك عليه:</label>
+                            <input type="email" id="userEmail" class="form-control" placeholder="yourname@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="paymentMethod"><i class="fa-solid fa-wallet"></i> طريقة الدفع المفضلة:</label>
+                            <select id="paymentMethod" class="form-control">
+                                <option value="BaridiMob">تطبيق بريدي موب (BaridiMob) 📱 - أسرع تفعيل</option>
+                                <option value="CCP">حوالة بريدية (CCP) 🏛️</option>
+                                <option value="Flexy">فليكسي (Flexy Djezzy / Mobilis / Ooredoo)</option>
+                                <option value="DirectChat">استفسار وتفاهم مباشر</option>
+                            </select>
+                        </div>
+
+                        <!-- Summary of what is included -->
+                        <div class="order-summary-box">
+                            <h4><i class="fa-solid fa-receipt"></i> ملخص باقتك:</h4>
+                            <ul>
+                                <li>✅ حساب Gemini Pro الرسمي لمدة 18 شهر</li>
+                                <li>✅ إمكانية إضافة 5 حسابات إضافية (6 مستخدمين)</li>
+                                <li>✅ مساحة تخزين 5TB سحابية كاملة</li>
+                                <li>✅ Veo 3 + Imagen 3 + NotebookLM</li>
+                                <li>🎁 هدية: حساب Flow (1000 نقطة/شهر) + Antigravity</li>
+                                <li>🛠️ مرافقة ودعم فني جزائري مخصص</li>
+                            </ul>
+                            <div class="total-price-row">
+                                <span>المجموع الإجمالي:</span>
+                                <span class="total-amount">1,000 دج <small>(بدلاً من 36,000 دج)</small></span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-glow btn-submit-order">
+                            <i class="fa-brands fa-whatsapp"></i> تأكيد الطلب عبر واتساب فوراً ⚡
+                        </button>
+                        
+                        <div class="or-separator"><span>أو</span></div>
+
+                        <a href="https://m.me/" target="_blank" id="messengerBtn" class="btn btn-messenger">
+                            <i class="fa-brands fa-facebook-messenger"></i> راسلنا مباشرة على صفحة ميسنجر
+                        </a>
+                    </form>
+
+                    <!-- Payment Info / Quick Details -->
+                    <div class="payment-info-box">
+                        <div class="info-card">
+                            <div class="info-card-head">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div>
+                                    <h4>معلومات الدفع عبر BaridiMob</h4>
+                                    <span>تحويل سريع وفوري 24/7</span>
+                                </div>
+                            </div>
+                            <div class="copy-field">
+                                <code>00799999002587412388</code>
+                                <button class="btn-copy" onclick="copyText('00799999002587412388', this)"><i class="fa-regular fa-copy"></i> نسخ RIP</button>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-card-head">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <div>
+                                    <h4>معلومات التحويل عبر CCP</h4>
+                                    <span>عبر مراكز بريد الجزائر</span>
+                                </div>
+                            </div>
+                            <div class="copy-field">
+                                <code>CCP: 0012345678 Clé 99</code>
+                                <button class="btn-copy" onclick="copyText('0012345678 99', this)"><i class="fa-regular fa-copy"></i> نسخ</button>
+                            </div>
+                        </div>
+
+                        <div class="guarantee-box">
+                            <i class="fa-solid fa-shield-check"></i>
+                            <div>
+                                <h5>ضمان استرجاع ودعم كامل</h5>
+                                <p>أموالك في أمان وضمان 100%. إذا واجهت أي مشكلة لم يتم حلها، يتم استرجاع المبلغ فوراً دون تعقيدات.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-sparkles"></i></div>
+                    <div class="logo-text">
+                        <span class="brand-title">Gemini <span class="gradient-text">Pro 18M</span></span>
+                    </div>
+                </div>
+                <p>المنصة الموثوقة لخدمات واشتراكات الذكاء الاصطناعي الرسمية في الجزائر.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <a href="#features">المميزات</a>
+                <a href="#bonuses">الهدايا</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+                <a href="#order-section">طلب الاشتراك</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>تواصل مباشر</h4>
+                <p><i class="fa-brands fa-whatsapp text-whatsapp"></i> خدمة العملاء متوفرة يومياً</p>
+                <p><i class="fa-solid fa-clock"></i> استجابة سريعة في أقل من 10 دقائق</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>جميع الحقوق محفوظة © 2026 | عرض Gemini Pro الحصري للجزائر 🇩🇿</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Purchase Toast Notification Simulation -->
+    <div id="liveToast" class="live-toast">
+        <div class="toast-icon"><i class="fa-solid fa-check-circle"></i></div>
+        <div class="toast-info">
+            <h5 id="toastUser">محمد من البليدة</h5>
+            <p>قام للتو بحجز اشتراك Gemini Pro (18 شهر) ⚡</p>
+            <span class="toast-time">منذ 3 دقائق</span>
+        </div>
+    </div>
+
+    <!-- Floating Sticky CTA Button on Mobile -->
+    <div class="sticky-mobile-cta">
+        <div class="sticky-price">
+            <span>السعر: <strong>1,000 دج</strong></span>
+            <small>18 شهر كاملة</small>
+        </div>
+        <a href="#order-section" class="btn btn-glow sticky-btn">
+            اطلب الآن <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
