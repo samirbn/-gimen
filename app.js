@@ -97,8 +97,6 @@ function initOrderForm() {
         const payment = document.getElementById('paymentMethod').value;
 
         let paymentLabel = "بريدي موب (BaridiMob)";
-        if (payment === "CCP") paymentLabel = "حوالة بريدية (CCP)";
-        if (payment === "Flexy") paymentLabel = "فليكسي (Flexy)";
         if (payment === "DirectChat") paymentLabel = "استفسار ومفاهمة مباشرة";
 
         // Build formatted WhatsApp message
