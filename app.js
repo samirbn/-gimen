@@ -5,7 +5,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     initCountdown();
     initAccordion();
-    initLiveSalesToast();
     initOrderForm();
 });
 
@@ -81,53 +80,13 @@ window.copyText = function(text, btnElement) {
     });
 };
 
-// 4. Live Simulated Customer Purchase Notification
-function initLiveSalesToast() {
-    const toast = document.getElementById('liveToast');
-    const toastUser = document.getElementById('toastUser');
-    if (!toast || !toastUser) return;
-
-    const buyers = [
-        { name: "أمين ب.", city: "الجزائر العاصمة", min: "منذ 2 دقيقة" },
-        { name: "ياسر ك.", city: "وهران", min: "منذ 5 دقائق" },
-        { name: "صالح م.", city: "قسنطينة", min: "منذ دقيقة واحدة" },
-        { name: "إيمان ق.", city: "سطيف", min: "منذ 7 دقائق" },
-        { name: "عبد النور ر.", city: "باتنة", min: "منذ 4 دقائق" },
-        { name: "حمزة د.", city: "عنابة", min: "منذ 3 دقائق" },
-        { name: "مريم ت.", city: "تلمسان", min: "منذ 6 دقائق" },
-        { name: "وليد ج.", city: "البليدة", min: "منذ دقيقة واحدة" }
-    ];
-
-    let index = 0;
-
-    function showToast() {
-        const buyer = buyers[index % buyers.length];
-        toastUser.innerText = `${buyer.name} من ${buyer.city}`;
-        toast.querySelector('.toast-time').innerText = buyer.min;
-        
-        toast.classList.add('show');
-
-        setTimeout(() => {
-            toast.classList.remove('show');
-        }, 4500);
-
-        index++;
-        // Trigger randomly every 14 to 28 seconds
-        const nextTime = Math.floor(Math.random() * (28000 - 14000) + 14000);
-        setTimeout(showToast, nextTime);
-    }
-
-    // First appearance after 4 seconds
-    setTimeout(showToast, 4000);
-}
-
-// 5. Order Form -> WhatsApp Redirection Handler
+// 4. Order Form -> WhatsApp Redirection Handler
 function initOrderForm() {
     const form = document.getElementById('orderForm');
     if (!form) return;
 
-    // Put your WhatsApp contact phone number here (with country code 213 for Algeria)
-    const whatsappPhone = "213555000000"; 
+    // Algerian WhatsApp number
+    const whatsappPhone = "213664764206"; 
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
